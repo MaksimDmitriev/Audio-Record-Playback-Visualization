@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context="ru.maksim.sample.MainActivity">
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/not_played" />
+
+        <ImageView
+            android:id="@+id/clippedView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/played_clip" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/waveForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WaveForm" />
+
+    <Button
+        android:id="@+id/yalantisHorizonWave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yalantis Horizon Wave" />
+
+    <Button
+        android:id="@+id/audioRecorderVisualization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audio-Recorder-Visualization" />
+
+    <Button
+        android:id="@+id/semantiveWaveform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semantive Waveform" />
+
+    <Button
+        android:id="@+id/waveInApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WaveInApp" />
+
+    <Button
+        android:id="@+id/waveformControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WaveformControl" />
+
+    <Button
+        android:id="@+id/playerVisualizerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PlayerVisualizerView" />
+
+</LinearLayout>
+
