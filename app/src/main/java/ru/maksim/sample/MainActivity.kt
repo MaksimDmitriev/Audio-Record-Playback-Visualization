@@ -1,6 +1,7 @@
 package ru.maksim.sample
 
 import android.animation.AnimatorInflater
+import android.content.Intent
 import android.graphics.drawable.ClipDrawable
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -15,6 +16,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         play.setOnClickListener({ play() })
+        playerVisualizerView.setOnClickListener( { startPlayerVisualizerActivity() } )
+    }
+
+    private fun startPlayerVisualizerActivity() {
+        val intent = Intent(
+                this,
+                PlayerVisualizerViewActivity::class.java
+        )
+        startActivity(intent)
     }
 
     private fun play() {
